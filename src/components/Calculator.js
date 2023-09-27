@@ -1,9 +1,7 @@
 import React from 'react';
 
-
 const Calculator = () => (
 
-   
   <section className="main-container">
     <input type="number" placeholder="0" />
     <div className="clear">A/C</div>
