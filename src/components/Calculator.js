@@ -1,9 +1,8 @@
-import React from 'react';
+import Input from './Input';
 
 const Calculator = () => (
-
   <section className="main-container">
-    <input type="number" placeholder="0" />
+    <Input />
     <div className="clear">A/C</div>
     <div className="plus-minus">+/-</div>
     <div className="modulus">%</div>
@@ -24,7 +23,6 @@ const Calculator = () => (
     <div className="decimal">.</div>
     <div className="equal orange">=</div>
   </section>
-
 );
 
 export default Calculator;

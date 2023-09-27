@@ -39,6 +39,13 @@
   background-color: rgb(159, 149, 144);
 }
 
+.screen {
+  display: grid;
+  grid-area: input;
+  width: 100%;
+  flex-direction: column;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -49,8 +56,18 @@ input::-webkit-inner-spin-button {
   color: white;
 }
 
+input[type='text'] {
+  outline: none;
+}
+
 input[type='number'] {
+  outline: #f5913e;
+}
+
+input[type='number'],
+input[type='text'] {
   grid-area: input;
+  width: 100%;
   border: none;
   grid-column: span 4;
   text-align: end;
