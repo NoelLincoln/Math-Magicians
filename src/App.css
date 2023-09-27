@@ -1,39 +1,146 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  margin-top: 4rem;
   text-align: center;
+  grid-template-columns: repeat(4, minmax(1em, 1fr));
+  grid-template-rows: repeat(6, minmax(1em, 1fr));
+  grid-template-areas:
+    'input input input input'
+    'clear plusminus modulus division'
+    'seven eight nine multiplyy'
+    'four five six minus'
+    'one two three addition'
+    'zeroo zeroo period equal';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.orange {
+  background-color: #f5913e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container > div {
   display: flex;
-  flex-direction: column;
+  border: 1px solid gray;
+  height: 4rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.main-container > div:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(159, 149, 144);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input[type='number'] {
+  grid-area: input;
+  border: none;
+  grid-column: span 4;
+  text-align: end;
+  padding: 0.5rem;
+  color: white;
+  background-color: gray;
+  appearance: textfield;
+  -moz-appearance: textfield;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+input[type='number']:hover {
+  color: white;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.align-center {
+  text-align: center;
+}
+
+.zero {
+  grid-area: zeroo;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiply {
+  grid-area: multiplyy;
+}
+
+.addition {
+  grid-area: addition;
+}
+
+.subtraction {
+  grid-area: minus;
+}
+
+.division {
+  grid-area: division;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.plus-minus {
+  grid-area: plusminus;
+}
+
+.modulus {
+  grid-area: modulus;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.decimal {
+  grid-area: period;
 }
