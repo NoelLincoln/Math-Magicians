@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Output from './Output';
 import calculate from './logic/calculate';
-import Quotes from './Quotes';
 
 const Calculator = () => {
   const [calcState, setCalcState] = useState({
@@ -55,7 +54,6 @@ const Calculator = () => {
           </button>
         ))}
       </section>
-      <Quotes />
     </>
   );
 };
