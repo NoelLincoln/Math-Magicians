@@ -21,6 +21,13 @@
     'zeroo zeroo period equal';
 }
 
+.quote {
+  width: 80%;
+  padding-top: 4rem;
+  margin: auto;
+  text-align: center;
+}
+
 .orange {
   background-color: #f5913e;
 }
