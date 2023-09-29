@@ -1,19 +1,13 @@
 import { PropTypes } from 'prop-types';
 
-const Output = ({ value, placeholder }) => (
+const Output = ({ value }) => (
   <div className="result">
-    <input
-      type="text"
-      value={value}
-      placeholder={placeholder}
-      id="inputField"
-    />
+    <input type="text" value={value} id="inputField" />
   </div>
 );
 
 Output.propTypes = {
   value: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
 };
 
 export default Output;
