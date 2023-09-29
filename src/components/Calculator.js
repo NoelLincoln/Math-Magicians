@@ -1,28 +1,60 @@
-import Input from './Input';
+import React, { useState } from 'react';
+import Output from './Output';
+import calculate from './logic/calculate';
 
-const Calculator = () => (
-  <section className="main-container">
-    <Input />
-    <div className="clear">A/C</div>
-    <div className="plus-minus">+/-</div>
-    <div className="modulus">%</div>
-    <div className="division orange">÷</div>
-    <div className="seven">7</div>
-    <div className="eight">8</div>
-    <div className="nine">9</div>
-    <div className="multiply orange">x</div>
-    <div className="four">4</div>
-    <div className="five">5</div>
-    <div className="six">6</div>
-    <div className="subtraction orange">-</div>
-    <div className="one">1</div>
-    <div className="two">2</div>
-    <div className="three">3</div>
-    <div className="addition orange">+</div>
-    <div className="zero">0</div>
-    <div className="decimal">.</div>
-    <div className="equal orange">=</div>
-  </section>
-);
+const Calculator = () => {
+  const [calcState, setCalcState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const { total, next, operation } = calcState;
+
+  const displayValue = `${total || ''} ${operation || ''} ${next || ''}`;
+  // const placeholderValue = '0';
+  const handleBtnClick = (btnLabel) => {
+    const newCalculatorState = calculate(calcState, btnLabel);
+    setCalcState(newCalculatorState);
+  };
+
+  const buttons = [
+    { id: 'clear', label: 'A/C' },
+    { id: 'plus-minus', label: '+/-' },
+    { id: 'modulus', label: '%' },
+    { id: 'division', label: '÷' },
+    { id: 'seven', label: '7' },
+    { id: 'eight', label: '8' },
+    { id: 'nine', label: '9' },
+    { id: 'multiply', label: 'x' },
+    { id: 'four', label: '4' },
+    { id: 'five', label: '5' },
+    { id: 'six', label: '6' },
+    { id: 'subtraction', label: '-' },
+    { id: 'one', label: '1' },
+    { id: 'two', label: '2' },
+    { id: 'three', label: '3' },
+    { id: 'addition', label: '+' },
+    { id: 'zero', label: '0' },
+    { id: 'decimal', label: '.' },
+    { id: 'equal', label: '=' },
+  ];
+  return (
+    <section className="main-container">
+      <Output value={displayValue} />
+
+      {buttons.map((btn) => (
+        <button
+          key={btn.id}
+          type="button"
+          className={btn.id}
+          onClick={() => handleBtnClick(btn.label)}
+        >
+          {btn.label}
+        </button>
+      ))}
+    </section>
+  );
+};
 
 export default Calculator;
