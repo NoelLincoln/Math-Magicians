@@ -40,20 +40,21 @@ const Calculator = () => {
     { id: 'equal', label: '=' },
   ];
   return (
-    <section className="main-container">
-      <Output value={displayValue} />
-
-      {buttons.map((btn) => (
-        <button
-          key={btn.id}
-          type="button"
-          className={btn.id}
-          onClick={() => handleBtnClick(btn.label)}
-        >
-          {btn.label}
-        </button>
-      ))}
-    </section>
+    <>
+      <section className="main-container">
+        <Output value={displayValue} />
+        {buttons.map((btn) => (
+          <button
+            key={btn.id}
+            type="button"
+            className={btn.id}
+            onClick={() => handleBtnClick(btn.label)}
+          >
+            {btn.label}
+          </button>
+        ))}
+      </section>
+    </>
   );
 };
 
