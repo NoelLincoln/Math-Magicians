@@ -35,7 +35,7 @@
 
 # 📖 Math Magicians <a name="about-project"></a>
 
-**Math Magicians** is a calculator application built using React 
+**Math Magicians** is a calculator application built using React
 .
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -112,28 +112,27 @@ To run the project run :
 ```sh
   npm start
 ```
+
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
 The page will reload when you make changes.
 You may also see any lint errors in the console
 
-
 ### Run tests
 
 To run tests, run the following command:
 
-
 ```sh
   npm test
 ```
+
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-
 ### Deployment
 
-This project can be deployed on several platforms. Github pages is used for deployment. For detailed steps visit  [deploy create-react-app](https://create-react-app.dev/docs/deployment/#github-pages).
+This project can be deployed on several platforms. Github pages is used for deployment. For detailed steps visit [deploy create-react-app](https://create-react-app.dev/docs/deployment/#github-pages).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +160,7 @@ This project can be deployed on several platforms. Github pages is used for depl
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/NoelLincoln/Math-Magicians.git/issues).
+Feel free to check the [issues page](https://github.com/NoelLincoln/Math-Magicians/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
