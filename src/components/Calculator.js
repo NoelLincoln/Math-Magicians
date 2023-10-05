@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Output from './Output';
 import calculate from './logic/calculate';
+import style from '../styles/calculator.css';
 
 const Calculator = () => {
   const [calcState, setCalcState] = useState({
@@ -41,6 +42,10 @@ const Calculator = () => {
   ];
   return (
     <>
+      <div>
+        <p className={style.p}>Let&apos;s do some math!</p>
+      </div>
+
       <section className="main-container">
         <Output value={displayValue} />
         {buttons.map((btn) => (
