@@ -4,11 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 2rem 5rem 2rem 5rem;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.intro-calculator {
+  font-size: 26px;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 2rem;
+}
+
 .main-container {
-  width: 80%;
-  display: grid;
+  width: 76%;
   margin: auto;
-  margin-top: 4rem;
+  margin-right: 0;
+  display: grid;
   text-align: center;
   grid-template-columns: repeat(4, minmax(1em, 1fr));
   grid-template-rows: repeat(6, minmax(1em, 1fr));
@@ -19,6 +40,13 @@
     'four five six minus'
     'one two three addition'
     'zeroo zeroo period equal';
+}
+
+.pagenotfound {
+  width: 50%;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
 }
 
 .quote {

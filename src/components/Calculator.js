@@ -41,19 +41,25 @@ const Calculator = () => {
   ];
   return (
     <>
-      <section className="main-container">
-        <Output value={displayValue} />
-        {buttons.map((btn) => (
-          <button
-            key={btn.id}
-            type="button"
-            className={btn.id}
-            onClick={() => handleBtnClick(btn.label)}
-          >
-            {btn.label}
-          </button>
-        ))}
-      </section>
+      <div className="wrapper">
+        <div>
+          <p className="intro-calculator ">Let&apos;s do some math!</p>
+        </div>
+
+        <section className="main-container">
+          <Output value={displayValue} />
+          {buttons.map((btn) => (
+            <button
+              key={btn.id}
+              type="button"
+              className={btn.id}
+              onClick={() => handleBtnClick(btn.label)}
+            >
+              {btn.label}
+            </button>
+          ))}
+        </section>
+      </div>
     </>
   );
 };
