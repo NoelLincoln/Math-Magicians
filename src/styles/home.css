@@ -1,0 +1,7 @@
+section {
+  margin-top: 2rem;
+}
+
+section > p {
+  margin-top: 1.5rem;
+}
