@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 
 const Output = ({ value }) => (
   <div className="result">
-    <input type="text" value={value} id="inputField" />
+    <input type="text" value={value} data-testid="inputField" readOnly />
   </div>
 );
 

@@ -11,7 +11,9 @@ const Calculator = () => {
 
   const { total, next, operation } = calcState;
 
-  const displayValue = `${total || ''} ${operation || ''} ${next || ''}`;
+  const displayValue = `${(total || '').trim()} ${(operation || '').trim()} ${(
+    next || ''
+  ).trim()}`;
   // const placeholderValue = '0';
   const handleBtnClick = (btnLabel) => {
     const newCalculatorState = calculate(calcState, btnLabel);
@@ -39,6 +41,7 @@ const Calculator = () => {
     { id: 'decimal', label: '.' },
     { id: 'equal', label: '=' },
   ];
+
   return (
     <>
       <div className="wrapper">
