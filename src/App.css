@@ -8,6 +8,18 @@ body {
   padding: 2rem 5rem 2rem 5rem;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.intro-calculator {
+  font-size: 20px;
+}
+
 .main-container {
   width: 60%;
   margin: auto;

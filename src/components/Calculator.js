@@ -43,7 +43,7 @@ const Calculator = () => {
   return (
     <>
       <div>
-        <p className={style.p}>Let&apos;s do some math!</p>
+        <p className="intro-calculator ">Let&apos;s do some math!</p>
       </div>
 
       <section className="main-container">
