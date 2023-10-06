@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component snapshot for an unknown route 1`] = `
+<DocumentFragment>
+  <nav>
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          class=""
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    class="pagenotfound"
+  >
+    <p>
+      Sorry, Page Not Found
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component snapshot for the / route 1`] = `
+<DocumentFragment>
+  <nav>
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <h4>
+      Welcome to our page
+    </h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum dolores ea quos exercitationem libero et eveniet porro est similique. Eos repudiandae dolore nam veniam itaque voluptas, incidunt necessitatibus maxime.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum dolores ea quos exercitationem libero et eveniet porro est similique. Eos repudiandae dolore nam veniam itaque voluptas, incidunt necessitatibus maxime.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum dolores ea quos exercitationem libero et eveniet porro est similique. Eos repudiandae dolore nam veniam itaque voluptas, incidunt necessitatibus maxime.
+    </p>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`App component snapshot for the /calculator route 1`] = `
+<DocumentFragment>
+  <nav>
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          class=""
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    class="wrapper"
+  >
+    <div>
+      <p
+        class="intro-calculator "
+      >
+        Let's do some math!
+      </p>
+    </div>
+    <section
+      class="main-container"
+    >
+      <div
+        class="result"
+      >
+        <input
+          data-testid="inputField"
+          readonly=""
+          type="text"
+          value="  "
+        />
+      </div>
+      <button
+        class="clear"
+        type="button"
+      >
+        A/C
+      </button>
+      <button
+        class="plus-minus"
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        class="modulus"
+        type="button"
+      >
+        %
+      </button>
+      <button
+        class="division"
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        class="seven"
+        type="button"
+      >
+        7
+      </button>
+      <button
+        class="eight"
+        type="button"
+      >
+        8
+      </button>
+      <button
+        class="nine"
+        type="button"
+      >
+        9
+      </button>
+      <button
+        class="multiply"
+        type="button"
+      >
+        x
+      </button>
+      <button
+        class="four"
+        type="button"
+      >
+        4
+      </button>
+      <button
+        class="five"
+        type="button"
+      >
+        5
+      </button>
+      <button
+        class="six"
+        type="button"
+      >
+        6
+      </button>
+      <button
+        class="subtraction"
+        type="button"
+      >
+        -
+      </button>
+      <button
+        class="one"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        class="two"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        class="three"
+        type="button"
+      >
+        3
+      </button>
+      <button
+        class="addition"
+        type="button"
+      >
+        +
+      </button>
+      <button
+        class="zero"
+        type="button"
+      >
+        0
+      </button>
+      <button
+        class="decimal"
+        type="button"
+      >
+        .
+      </button>
+      <button
+        class="equal"
+        type="button"
+      >
+        =
+      </button>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App component snapshot for the /quotes route 1`] = `
+<DocumentFragment>
+  <nav>
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          class=""
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/quotes"
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    class="quote"
+  >
+    <h2>
+      Daily inspiration
+    </h2>
+    <p>
+      Loading...
+    </p>
+  </div>
+</DocumentFragment>
+`;

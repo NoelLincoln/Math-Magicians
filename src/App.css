@@ -125,6 +125,7 @@ button:hover {
 }
 
 .result {
+  flex-direction: column;
   width: 100%;
   grid-area: output;
 }
